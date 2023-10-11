@@ -1,7 +1,6 @@
 const artists = [
     {
-    Artist: "tswift",
-    Genre: "pop",
+    Artist: "taylor swift",
     Age: 33,
     LatestAlbum: "speak now (taylors version)",
     },
@@ -26,10 +25,16 @@ const artists = [
     {
     Artist: "babygirl",
     Genre: "indie pop",
-    Age: "?",
+    Age: 24,
     LatestAlbum: "be still my heart",
     },
 ]
-const result = artists.filter((artist)=> artist.age == "33");
-console.log(result); 
-    
+artists.forEach((el)=> console.log(el.Artist))
+const taylor = ["pop", "country", "pop rock"];
+console.log(taylor[0]);
+console.log(taylor[1]);
+console.log(taylor[2]);
+console.log(taylor[3]);
+
+const results = artists.filter((artist) => artist.Age == 33);
+console.log(results);
